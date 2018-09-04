@@ -1,0 +1,22 @@
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = black white bold
+  changed = blue white bold
+  untracked = red white bold
+[user]
+	email = daynemay@gmail.com
+[alias]
+addnw=!sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
+
+[help]
+	autocorrect = 10
