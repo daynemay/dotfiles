@@ -14,10 +14,16 @@
   changed = blue white bold
   untracked = red white bold
 [user]
-	email = daynemay@gmail.com
+  email = daynemay@users.noreply.github.com
 [alias]
 addnw=!sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
 	co = checkout
 
 [help]
 	autocorrect = 10
+[log]
+  xxx = format:"%h %h %h"
+[pull]
+	ff = only
+[gpg]
+	program = gpg1

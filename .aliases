@@ -6,3 +6,16 @@ alias gds="git diff --staged"
 alias gca="git commit --amend"
 alias gcane="git commit --amend --no-edit"
 
+# docker-compose is too many letters
+alias dcom=docker-compose 
+
+# yarn:XXX commands for the pbsmc-frontend project; 20190910: replaced by nrt, below
+# alias yt="yarn test"
+# alias ytq="yarn test:quick"
+
+# npm run:XXX commands for the pbsmc-frontend project
+alias nrt="npm run test"
+alias nrtq="npm run test:quick"
+
+# Create notes in my notes repo 
+alias nn="cd ~/projects/notes; ./new_note.sh"
