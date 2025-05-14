@@ -1,3 +1,21 @@
+# [user]
+#   name = '...'
+#   email = "..."
+
+[help]
+  autocorrect = 10  # continue with what you probably meant in 1.0 seconds
+
+[interactive]
+  singlekey = true  # i.e. no confirm on commands during `git add -p` and similar
+
+[alias]
+  root = rev-parse --show-toplevel
+  add-again = update-index --again   # add only modifications to files that have already been added
+  addnw=!sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
+  co = checkout
+  st = status
+  cl = clone
+
 [color]
   ui = auto
 [color "branch"]
@@ -13,11 +31,3 @@
   added = black white bold
   changed = blue white bold
   untracked = red white bold
-[user]
-  # email = "..."
-[alias]
-addnw=!sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
-	co = checkout
-
-[help]
-	autocorrect = 10
